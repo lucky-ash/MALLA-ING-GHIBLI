@@ -128,3 +128,26 @@ document.addEventListener("mousemove", function(e) {
   const y = (e.clientY / window.innerHeight) * 10;
   document.body.style.backgroundPosition = `${50 - x}% ${50 - y}%`;
 });
+document.addEventListener("mousemove", function(e) {
+  const x = (e.clientX / window.innerWidth) * 10;
+  const y = (e.clientY / window.innerHeight) * 10;
+  document.body.style.backgroundPosition = `${50 - x}% ${50 - y}%`;
+});
+function toggleMusic() {
+  const audio = document.getElementById("bg-music");
+  audio.muted = !audio.muted;
+}
+document.querySelectorAll(".materia").forEach(div => {
+  div.addEventListener("click", () => {
+    const nombre = div.querySelector("h3").textContent;
+    const info = `Más información sobre <strong>${nombre}</strong>...`;
+    document.getElementById("modal-info").innerHTML = info;
+    document.getElementById("modal").style.display = "flex";
+  });
+});
+
+document.querySelector(".close").onclick = () => {
+  document.getElementById("modal").style.display = "none";
+};
+
+
