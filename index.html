@@ -3,31 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Curricular Ghibli</title>
+  <title>Malla Curricular - Estilo Ghibli</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- 🌿 Encabezado mágico -->
   <header>
     <h1>Malla Curricular</h1>
-    <p>Inspirado en Studio Ghibli ✨</p>
+    <p>Estilo Studio Ghibli ✨</p>
+    <button onclick="toggleMusic()">🎵 Música</button>
   </header>
 
+  <!-- 📚 Contenedor de materias -->
   <main class="malla">
-    <!-- Aquí se mostrará la malla (lo haremos con JS o HTML directo) -->
+    <!-- Las materias se cargan desde script.js -->
   </main>
+
+  <!-- ✨ Luciérnagas flotantes -->
+  <div class="fireflies"></div>
+
+  <!-- 🎵 Música de fondo -->
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/sounds/ghibli-music.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- 📜 Modal de información mágica -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-info"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
-  <div class="fireflies"></div>
-<audio id="bg-music" autoplay loop>
-  <source src="assets/sounds/ghibli-music.mp3" type="audio/mp3">
-</audio>
-<button onclick="toggleMusic()">🎵 Música</button>
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div id="modal-info"></div>
-  </div>
-</div>
-
 </html>
