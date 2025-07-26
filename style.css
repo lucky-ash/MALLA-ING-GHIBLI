@@ -1,0 +1,37 @@
+body {
+  font-family: 'Georgia', serif;
+  background-image: url('assets/images/fondo-bosque.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.materia {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid #92c8b0;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.materia:hover {
+  background-color: #f0fff5;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
